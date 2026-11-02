@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+~$*.docx
+_report_qa/
+results/**/timeseries.csv
+results/**/stage2_static_iekf_data.csv
+results/**/trace_*.csv
+results/**/runtime_summary.csv
