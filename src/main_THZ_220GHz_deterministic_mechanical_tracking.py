@@ -3783,6 +3783,7 @@ def load_measured_pattern(path: Path | None = None) -> MeasuredAntennaPattern:
     candidates = [WORKSPACE / '实验记录' / '20260731_TWC_三点单端直接功率跟瞄' /
                   'paper' / 'TWC_CA_J3MT_simplified_20260801' / 'data' /
                   DEFAULT_ANTENNA_FILENAME,
+                  WORKSPACE.parent / 'data' / DEFAULT_ANTENNA_FILENAME,
                   WORKSPACE / DEFAULT_ANTENNA_FILENAME]
     source = path or next((candidate for candidate in candidates if candidate.is_file()), None)
     if source is None or not source.is_file():
